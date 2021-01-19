@@ -1,0 +1,47 @@
+.Menubar {
+    height: 84px;
+    width: calc(100% - 32px);
+    display: flex;
+    padding-left: 16px;
+    padding-right: 16px;
+    justify-content: space-between;
+    background-color: #1e2023;
+}
+
+.menu {
+    line-height: 84px;
+    padding-left: 20px;
+    padding-right: 24px;
+    margin: 0;
+    font-size: 1em;
+    text-decoration: none;
+    transition: 0.35s;
+}
+
+.true {
+    color: lightgray;
+}
+
+.false {
+    color: gray;
+}
+
+.menus {
+    display: flex;
+}
+
+.activeMenu {
+    color: white;
+}
+
+.logo {
+    height: 30px;
+    width: 120px;
+}
+
+.logo_link {
+    margin: auto 0;
+    height: 30px;
+    width: 120px;
+    padding: 16px;
+}

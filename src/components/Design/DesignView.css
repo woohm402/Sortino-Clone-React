@@ -1,0 +1,202 @@
+body.fix{
+	position: fixed; 
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.box {
+    border: 1px solid #5b616c;
+    box-sizing: border-box;
+    background-color: #1e2023;
+    text-align: center;
+    line-height: 25vw;
+    height: 25vw;
+    transition: 0.35s;
+}
+
+.small {
+    width: 25%;
+}
+
+.big {
+    width: 50%;
+}
+
+.design_body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dlogo {
+    margin: auto;
+    vertical-align: middle;
+    transition: 0.35s;
+}
+
+.dlogo.ckX.off {
+    width: 25%;
+    height: 25%;
+}
+.dlogo.ckX.on {
+    width: 40%;
+    height: 40%;
+}
+.dlogo.ckO {
+    animation: squareLogoAnime;
+    animation-duration: 2s;
+    position: absolute;
+}
+
+@keyframes squareLogoAnime {
+    0% {
+        position: relative;
+        left: 0px;
+        top: 84px;
+    }
+    2% {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        left: 0px;
+        top: 84px;
+    }
+    20% {
+        position: absolute;
+        width: 110px;
+        height: 110px;
+        top: 250px;
+        left: calc(50% - 55px);
+    }
+    40% {
+        width: 110px;
+        height: 110px;
+        top: 250px;
+        left: calc(50% - 55px);
+    }
+    50% {
+        width: 110px;
+        height: 110px;
+        top: 150px;
+        left: calc(50% - 55px);
+    }
+    100% {
+        width: 110px;
+        height: 110px;
+        top: 150px;
+        left: calc(50% - 55px);
+    }
+}
+
+.box.on.ckX#square {
+    background-color: darkred;
+}
+.box.ckO#square {
+    animation: squareAnime;
+    animation-duration: 2s;
+    background-color: darkred;
+    position: absolute;
+}
+@keyframes squareAnime {
+    0% {
+
+    }
+    10% {
+        
+    }
+    20% {
+        width: 100%;
+        height: 100%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.box.on.ckX#viewfinder {
+    background-color: rebeccapurple;
+}
+.box.on.ckX#bff {
+    background-color: rosybrown;
+}
+.box.on.ckX#teespring {
+    background-color: royalblue;
+}
+.box.on.ckX#everdwell {
+    background-color: wheat;
+}
+.box.on.ckX#bulan {
+    background-color: teal;
+}
+.box.on.ckX#disqus {
+    background-color: darkslategray;
+}
+.box.on.ckX#marker {
+    background-color: darkgreen;
+}
+.box.on.ckX#vida {
+    background-color: yellowgreen;
+}
+.box.on.ckX#webdesigner {
+    background-color: indianred;
+}
+.box.on.ckX#bento {
+    background-color: saddlebrown;
+}
+.box.on.ckX#instacart {
+    background-color: olive;
+}
+.box.on.ckX#dolody {
+    background-color: orchid;
+}
+.box.on.ckX#disqus {
+    background-color: palevioletred;
+}
+
+.sqDVContent {
+    width: 150%;
+    height: 400px;
+    top: 400px;
+    left: -25%;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 50% 400px;
+    border-top-right-radius: 50% 400px;
+    animation: sqDVContentAnime;
+    animation-duration: 2s;
+}
+
+@keyframes sqDVContentAnime {
+    0% {
+        width: 0%;
+        height: 400px;
+        top: 400px;
+        left: 50%;
+        position: absolute;
+        background-color: white;
+        border-top-left-radius: 0 400px;
+        border-top-right-radius: 0 400px;
+    }
+
+    50% {
+        width: 0%;
+        height: 400px;
+        top: 400px;
+        left: 50%;
+        position: absolute;
+        background-color: white;
+        border-top-left-radius: 0 400px;
+        border-top-right-radius: 0 400px;
+    }
+
+    80% {
+        width: 150%;
+        height: 400px;
+        top: 400px;
+        left: -25%;
+        position: absolute;
+        background-color: white;
+        border-top-left-radius: 50% 400px;
+        border-top-right-radius: 50% 400px;
+    }
+}

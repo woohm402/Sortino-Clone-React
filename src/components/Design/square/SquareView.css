@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sqWrapper {
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+}
+
+.backButton {
+    height: 44px;
+    width: 44px;
+    border-radius: 44px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    line-height: 44px;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation-name: btnAnimation;
+    animation-duration: 1.2s;
+}
+
+.nextButton {
+    height: 47.44px;
+    line-height: 47.44px;
+    text-decoration: none;
+    background-color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    border-radius: 7px;
+    width: 213.44px;
+    animation-name: btnAnimation;
+    animation-duration: 1.2s;
+}
+
+@keyframes btnAnimation {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#clImg {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 150px;
+    animation-name: logoImgAnimation;
+    animation-duration: 0.5s;
+    left: calc(50% - 215px);
+}
+
+@keyframes logoImgAnimation {
+    0% {
+        left: calc(50% - 55px);
+    }
+    100% {
+        left: calc(50% - 215px);
+    }
+}
+
+.sqContent {
+    width: 150%;
+    height: 400px;
+    top: 400px;
+    left: -25%;
+    position: absolute;
+    background-color: white;
+    border-top-left-radius: 50% 400px;
+    border-top-right-radius: 50% 400px;
+}
+
+#clTxt {
+    width: 300px;
+    height: 87px;
+    position: absolute;
+    top: 160px;
+    left: calc(50% - 85px);
+    animation-name: logoTxtAnimation;
+    animation-duration: 1.2s;
+}
+
+@keyframes logoTxtAnimation {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sqSummary {
+    width: 100%;
+    height: 500px;
+    background-color: darkred;
+    position: relative;
+}
+
+.content {
+    animation-name: contentAnimation;
+    animation-duration: 1.5s;
+    text-align: center;
+    color: black;
+}
+
+@keyframes contentAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
